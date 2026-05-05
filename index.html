@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        font-size: 80px;
+        color:blue;
+    }
+    button{
+        font-size: 50px;
+    }
+</style>
+<body>
+    <h1>roll the dice</h1>
+    <button>click</button>
+</body>
+<script>
+    let button=document.querySelector("button")
+let head=document.querySelector("h1")
+button.addEventListener("click",()=>{
+    let random=
+    Math.ceil(Math.random() * 6)
+   head.innerHTML=random
+
+})
+</script>
+</html>
